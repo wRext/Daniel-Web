@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Preencha os Campos</h1>
+        <!--Dados pessoais-->
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>   
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" required><br/>
+
+        <label for="sexo">Sexo: </label>
+        <input type="radio" id="sexo" name="sexo" value="masculino" checked> Masculino 
+        <input type="radio" id="sexo" name="sexo" value="feminino"> Feminino<br/>
+    </fieldset>
+    <!--Endereço-->
+    <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP: </label>
+        <input type="text" name="cep" id="cep" placeholder="ex: 11122-111" required>
+
+        <label for="logradouro">Lougradouro: </label>
+        <input type="text" name="Lougradouro" id="Lougradouro" placeholder="Digite seu endereço" required>
+
+        <label for="numero">Número: </label>
+        <input type="text" name="numero" id="numero" required><br/>
+
+        <label for="complemento">Complemento: </label>
+        <input type="text" name="complemento" id="complemento" placeholder="Apartamento / Casa">
+    </fieldset>
+    <!--Dados Financeiros-->
+    <fieldset>
+        <legend>Dados Financeiros</legend>
+        <label for="tipo">Tipo: </label>
+        <input type="radio" id="tipo" name="tipo" value="nacional"> Nacional
+        <input type="radio" id="tipo" name="tipo" value="internacional"> Internacional
+
+        <label for="bandeira">Bandeira: </label>
+        <select name="bandeira" id="bandeira">
+            <option value="mc">Mastercard</option>
+            <option value="visa">Visa</option>
+            <option value="elo">Elo</option>
+        </select>
+
+        <label for="ncartao">Número do Cartão: </label>
+        <input type="text" id="ncartao" name="ncartao" placeholder="Ex: 1122334556778899" required><br/> 
+
+        <label for="val">Validade: </label>
+        <input type="month" id="val" name="val"><br/>
+
+
+    </fieldset>
+
+
+</body>
+</html>
