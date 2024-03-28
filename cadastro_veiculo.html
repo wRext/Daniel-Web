@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha os campos</h1>
+
+    <fieldset>
+        <legend>Informações do veículo</legend>
+        <!--Estado e quilometragem-->
+        <label for="estado">Estado do veículo: </label>
+        <input type="radio" id="novo" name="estado"> Novo
+        <input type="radio" id="usado" name="estado"> Usado
+        <label for="km"> / Caso esteja usado, digite a quilometragem: </label>
+        <input type="text" id="km" name="km" placeholder="Em Km"> <br/>
+
+        <!--Categoria-->
+        <label for="categoria">Categoria do veículo: </label><br/>
+        <input type="radio" id="hatch" name="categoria" value="Hatch"/>
+        <label for="hatch">Hatch</label><br/>
+        <input type="radio" id="suv" name="categoria" value="SUV"/>
+        <label for="suv">SUV</label><br/>
+        <input type="radio" id="sedan" name="categoria" value="Sedã"/>
+        <label for="sedan">Sedã</label><br/>
+        <input type="radio" id="picape" name="categoria" value="Picape"/>
+        <label for="picape">Picape</label><br/>
+        <input type="radio" id="utilitario" name="categoria" value="Utilitário"/>
+        <label for="utilitario">Utilitário</label><br/>
+        <input type="radio" id="perua" name="categoria" value="Perua"/>
+        <label for="perua">Perua</label><br/>
+        <input type="radio" id="minivan" name="categoria" value="Minivan"/>
+        <label for="minivan">Minivan</label><br/>
+        <input type="radio" id="conversivel" name="categoria" value="Conversível"/>
+        <label for="conversivel">Conversível</label><br/>
+        <input type="radio" id="outros_cat" name="categoria" value="Outros"/>
+        <label for="outros">Outros</label><br/>
+
+        <!--Fabricante-->
+        <label for="fabricante">Fabricante do veículo: </label><br/>
+        <input type="radio" id="fiat" name="fabricante" value="Fiat"/>
+        <label for="fiat">Fiat</label><br/>
+        <input type="radio" id="ford" name="fabricante" value="Ford"/>
+        <label for="ford">Ford</label><br/>
+        <input type="radio" id="chevrolet" name="fabricante" value="Chevrolet"/>
+        <label for="chevrolet">Chevrolet</label><br/>
+        <input type="radio" id="volkswagen" name="fabricante" value="Volkswagen"/>
+        <label for="volkswagen">Volkswagen</label><br/>
+        <input type="radio" id="citroen" name="fabricante" value="Citroën"/>
+        <label for="citroen">Citroën</label><br/>
+        <input type="radio" id="renault" name="fabricante" value="Renault"/>
+        <label for="renault">Renault</label><br/>
+        <input type="radio" id="kia" name="fabricante" value="Kia"/>
+        <label for="kia">Kia</label><br/>
+        <input type="radio" id="outros_fab" name="fabricante" value="Outros"/>
+        <label for="outros">Outros</label><br/> <br/>
+
+        <!--Modelo, câmbio preço-->
+        <label for="modelo">Modelo do veículo: </label>
+        <input type="text" name="modelo" id="modelo" placeholder="Ex: Astra, fiesta, etc..." required> <br/> <br/>
+
+        <label for="cambio">Câmbio: </label>
+        <input type="radio" name="cambio" id="manual" checked> Manual
+        <input type="radio" name="cambio" id="auto" checked> Automático <br/> <br/>
+
+        <label for="preco">Preço do veículo: </label>
+        <input type="number" name="preco" id="preco" placeholder="Em R$" required> <br/> <br/>
+
+        <label for="combustivel">Tipo de combustível: </label>
+        <select name="combustivel" id="combustivel">
+            <option value="etanol">Etanol</option>
+            <option value="gasolina">Gasolina</option>
+            <option value="diesel">Diesel</option>
+            <option value="flex">Flex</option>
+        </select>
+        <label for="outro_combustivel">   Outro: </label>
+        <input type="text" name="outro_combustivel" id="outro_combustivel">
+    </fieldset>
+    
+    <!--Outras informações-->
+    <fieldset>
+        <legend>Outras informações do veículo</legend>
+
+        <label for="placa">Placa: </label>
+        <input type="text" name="placa" id="placa" placeholder="BRA19E2" required> <br/> <br/>
+        
+        <!--O carro ta blindado ou nem-->
+        <label for="blindagem">Blindagem: </label>
+        <input type="radio" name="blindado" id="blindado" required> Sim
+        <input type="radio" name="blindado" id="nao_blindado"> Não <br/> <br/>
+
+        <!--Portas-->
+        <label for="portas">Número de portas: </label>
+        <input type="number" name="portas" id="n_portas" placeholder="0 a 10" min="0" max="10" required> <br/> <br/>
+
+        <label for="foto">Foto do veículo: </label>
+        <input type="file" name="foto" id="foto" accept=".jpeg,.jpg,.png,.bmp,.gif">
+    </fieldset>
+
+    <!--Único Textarea-->
+    <fieldset>
+        <legend>Descrição do Veículo</legend>
+        <textarea name="descricao" id="descricao" cols="30" rows="7"></textarea>
+    </fieldset>
+
+
+</body>
+</html>
