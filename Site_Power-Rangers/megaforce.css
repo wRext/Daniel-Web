@@ -1,0 +1,17 @@
+.imagem-capa_mega img{
+        width: 40%;
+        border: 5px solid #1d3f3d;
+        margin-right: 100px;
+        float: right;    
+}
+
+.texto_megaforce{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 850px;    
+}
+
+.texto_megaforce h2{
+    text-align: center;
+}
