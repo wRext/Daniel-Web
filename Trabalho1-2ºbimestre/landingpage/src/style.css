@@ -1,0 +1,51 @@
+.imagem-carrossel{
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 400px;
+}
+
+.fonte-titulo {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto-quem-somos{
+    margin-top:40px;
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 560;
+    font-style: normal;
+    font-size: 17px;
+    font-style: oblique;
+    color: black;
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.cor-especial{
+    color: darkred;
+}
+
+.borda-cor-especial{
+    border-color: darkred;
+}
+
+.botao-cor-especial{
+    color: bisque;
+    background-color: rgb(124, 39, 39);
+}
+.botao-cor-especial:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.card-posicao-imagem{
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-largura{
+    /*width: 18rem;*/
+    max-width: 18rem;
+}
