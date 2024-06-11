@@ -1,0 +1,11 @@
+html body {
+    background-color: #7f98c5; /* Cor de fundo claro */
+}
+
+/* Cor de fundo para o formulário */
+#formularioCliente {
+    background-color: #ffffff; /* Cor de fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
